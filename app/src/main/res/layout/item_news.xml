@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:layout_margin="2dp"
+    android:background="@drawable/slide_view">
+
+    <ImageView
+        android:id="@+id/imageViewOfNewsItem"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:contentDescription="@string/image"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/titleOfNewsItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf ="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewOfNewsItem"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_margin="5dp"
+        android:maxLines="3"
+        />
+
+    <TextView
+        android:id="@+id/authorOfNewsItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleOfNewsItem"
+        android:textSize="12sp"
+        android:padding="10dp"
+        android:textColor="#EEEADE"
+        app:layout_constraintHorizontal_bias="0.01"
+        android:maxLines="1"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
